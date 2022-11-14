@@ -17,6 +17,7 @@ public class ReportController {
 
     @PostMapping
     public Report addReport(@RequestBody Report report){
+
         return service.saveReport(report);
     }
 
