@@ -23,7 +23,7 @@ public class ReportRepository {
     public Report save(Report newReport) throws IOException {
         list.add(newReport);
         System.out.println(newReport.getCurrentYear());
-        //FileReplacerAndMerger.fileReplacerAndMerger(newReport);
+        FileReplacerAndMerger.fileReplacerAndMerger(newReport);
 
         return newReport;
     }

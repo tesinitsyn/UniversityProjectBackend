@@ -14,6 +14,7 @@ public class FileReplacerAndMerger {
 
     public static void fileReplacerAndMerger(Report report) throws IOException {
         List<String> students = ExcelParsing.pushToArrayList(report.getFileChooser());
+                //"src/main/resources/WordAndExcelFiles/Пример таблицы.xlsx");
 
         ArrayList<String> replaceableNames = new ArrayList<>(){{
             add("studentFullName");

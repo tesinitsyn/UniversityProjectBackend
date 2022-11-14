@@ -17,7 +17,7 @@ public class Report {
     private String practiceName;
     private String orderDate;
     private String orderName;
-    private String sessionDate;
+    private String sessionDate = "hui";
     private String supervisorFN;
     private String currentYear = currentYearInstance.toString();
     private String courseNum;
