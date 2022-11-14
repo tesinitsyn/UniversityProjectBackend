@@ -15,6 +15,7 @@ public class ReportController {
     @Autowired
     private ReportService service;
 
+    @PostMapping
     public Report addReport(@RequestBody Report report){
         return service.saveReport(report);
     }
