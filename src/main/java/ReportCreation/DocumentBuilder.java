@@ -16,18 +16,6 @@ public class DocumentBuilder {
 
     private XWPFDocument doc = null;
 
-    public String getInput() {
-        return input;
-    }
-
-    public void setInput(String input) {
-        this.input = input;
-    }
-
-    public Template getTemplate() {
-        return template;
-    }
-
     private XWPFDocument getDoc() {
         return doc;
     }
@@ -38,18 +26,6 @@ public class DocumentBuilder {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    public void setTemplate(Template template) {
-        this.template = template;
-    }
-
-    public String getOutput() {
-        return output;
-    }
-
-    public void setOutput(String output) {
-        this.output = output;
     }
 
     public DocumentBuilder(Template template, String output, String input) {

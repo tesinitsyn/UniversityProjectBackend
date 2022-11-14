@@ -10,10 +10,6 @@ public class Template {
     private String studentFullName;
     private String studentShortName;
     private Map<String,String> keysAndValues;
-    public void setStudentFullName(String studentFullName){
-        this.studentFullName = studentFullName;
-        studentShortName = StringConverter.cutStud(this.studentFullName);
-    }
     private final ArrayList<String> replaceableNames;
     private final ArrayList<String> valuesForKeys = new ArrayList<>();
     public Template(ArrayList<String> replaceableNames, String studentFullName){
@@ -28,9 +24,6 @@ public class Template {
         return replaceableNames;
     }
 
-    public ArrayList<String> getNewValues(){
-        return valuesForKeys;
-    }
     public void setField(String field, String value){
         for (String f : replaceableNames){
             if(Objects.equals(f, field)){

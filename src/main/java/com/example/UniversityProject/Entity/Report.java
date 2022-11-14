@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Report {
-    private String studentFullName;
-    private String studentFN;
     private String instituteName;
     private String departmentName;
     private String practiceName;

@@ -20,8 +20,6 @@ public class ReportRepository {
     }
     public Report save(Report p){
         Report report = new Report();
-        report.setStudentFullName(p.getStudentFullName());
-        report.setStudentFN(p.getStudentFN());
         report.setInstituteName(p.getInstituteName());
         report.setDepartmentName(p.getDepartmentName());
         report.setPracticeName(p.getPracticeName());
