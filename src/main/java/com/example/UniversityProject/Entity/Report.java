@@ -4,10 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Report {
+    final static Date currentYearInstance = new Date();
+
     private String instituteName;
     private String departmentName;
     private String practiceName;
@@ -15,7 +19,7 @@ public class Report {
     private String orderName;
     private String sessionDate;
     private String supervisorFN;
-    private String currentYear;
+    private String currentYear = currentYearInstance.toString();
     private String courseNum;
     private String groupName;
     private String practicePlaceAndTime;
@@ -24,6 +28,6 @@ public class Report {
     private String headOfDFN;
     private String directionName;
     private String profileName;
-    private String pathToExcel;
+    private String fileChooser;
 
 }

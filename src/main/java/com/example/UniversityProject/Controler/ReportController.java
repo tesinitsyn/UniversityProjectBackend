@@ -5,6 +5,7 @@ import com.example.UniversityProject.Service.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @CrossOrigin
@@ -16,8 +17,7 @@ public class ReportController {
     private ReportService service;
 
     @PostMapping
-    public Report addReport(@RequestBody Report report){
-
+    public Report addReport(@RequestBody Report report) throws IOException {
         return service.saveReport(report);
     }
 

@@ -10,10 +10,10 @@ import java.util.List;
 
 public class FileReplacerAndMerger {
     //change path
-    String pathToTitleList = "src/main/resources/WordAndExcelFiles/TitleLists.docx";
+    final static String  pathToTitleList = "src/main/resources/WordAndExcelFiles/TitleLists.docx";
 
-    public void fileReplacerAndMerger(Report report) throws IOException {
-        List<String> students = ExcelParsing.pushToArrayList(report.getPathToExcel());
+    public static void fileReplacerAndMerger(Report report) throws IOException {
+        List<String> students = ExcelParsing.pushToArrayList(report.getFileChooser());
 
         ArrayList<String> replaceableNames = new ArrayList<>(){{
             add("studentFullName");
