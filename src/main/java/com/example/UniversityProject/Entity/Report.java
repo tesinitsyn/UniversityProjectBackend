@@ -10,16 +10,16 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Report {
-    final static Date currentYearInstance = new Date();
+    Date currentYearInstance = new Date();
 
     private String instituteName;
     private String departmentName;
     private String practiceName;
     private String orderDate;
     private String orderName;
-    private String sessionDate = "hui";
+    //private String sessionDate = "hui";
     private String supervisorFN;
-    private String currentYear = currentYearInstance.toString();
+    private String currentYear = String.valueOf(currentYearInstance.getYear() + 1900);
     private String courseNum;
     private String groupName;
     private String practicePlaceAndTime;

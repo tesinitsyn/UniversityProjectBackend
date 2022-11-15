@@ -24,7 +24,7 @@ public class FileReplacerAndMerger {
             add("practiceName");
             add("orderDate");
             add("orderName");
-            add("sessionDate");
+            //add("sessionDate");
             add("supervisorFN");
             add("currentYear");
             add("courseNum");
@@ -49,7 +49,7 @@ public class FileReplacerAndMerger {
                     case "practiceName" -> template.setField("practiceName",report.getPracticeName());//objUpdateWord.updateDocument(inputPath, outputPath, "${practiceName}", (String) practiceName.getValue());
                     case "orderDate" -> template.setField("orderDate",report.getOrderDate());//objUpdateWord.updateDocument(inputPath, outputPath, "${orderDate}", String.valueOf(orderDate.getValue()));
                     case "orderName" -> template.setField("orderName", report.getOrderName());//objUpdateWord.updateDocument(inputPath, outputPath, "${orderName}", orderName.getText());
-                    case "sessionDate" -> template.setField("sessionDate",report.getSessionDate());//objUpdateWord.updateDocument(inputPath, outputPath, "${sessionDate}", String.valueOf(sessionDate.getValue()));
+                    //case "sessionDate" -> template.setField("sessionDate",report.getSessionDate());//objUpdateWord.updateDocument(inputPath, outputPath, "${sessionDate}", String.valueOf(sessionDate.getValue()));
                     case "supervisorFN" -> template.setField("supervisorFN",report.getSupervisorFN());//objUpdateWord.updateDocument(inputPath, outputPath, "${supervisorFN}", supervisorFN.getText());
                     case "currentYear" -> template.setField("currentYear",report.getCurrentYear());//objUpdateWord.updateDocument(inputPath, outputPath, "${currentYear}", String.valueOf(currentYear));
                     case "courseNum" -> template.setField("courseNum",report.getCourseNum());//objUpdateWord.updateDocument(inputPath, outputPath, "${courseNum}", (String) courseNum.getValue());
