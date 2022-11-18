@@ -17,14 +17,15 @@ public class Report {
     int currentYearInstance;
     int currentMonthInstance = cal.get(Calendar.MONTH);
 
+    private int ver;
     private String instituteName;
     private String departmentName;
     private String practiceName;
     private String orderDate;
     private String orderName;
-    private String sessionDate = (currentMonthInstance > 6 ? "зимняя" : "летняя");
-    private String supervisorFN;
     private String currentYear = String.valueOf(currentYearInstance = cal.get(Calendar.YEAR));
+    private String sessionDate = (currentMonthInstance > 6 ? "декабря " + currentYear : "июня " + currentYear);
+    private String supervisorFN;
     private String courseNum;
     private String groupName;
     private String practicePlaceAndTime;

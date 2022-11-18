@@ -25,7 +25,7 @@ public class FileReplacerAndMerger {
             add("practiceName");
             add("orderDate");
             add("orderName");
-            //add("sessionDate");
+            add("sessionDate");
             add("supervisorFN");
             add("currentYear");
             add("courseNum");
@@ -76,6 +76,7 @@ public class FileReplacerAndMerger {
             DocumentBuilder.clearDoc(outputPath);
         }
         DocumentBuilder.deleteWM(pathToTitleList,"Evaluation Warning: The document was created with Spire.Doc for JAVA.");
-        ResultPusher.pushFile(pathToTitleList);
+        ResultPusher.pushFile(pathToTitleList, report.getGroupName() + ".docx");
+        DocumentBuilder.clearDoc(pathToTitleList);
     }
 }
